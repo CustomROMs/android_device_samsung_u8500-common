@@ -60,10 +60,15 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/cspsa.conf:system/etc/cspsa.conf \
     $(COMMON_PATH)/configs/usbid_init.sh:system/bin/usbid_init.sh
 
+#    $(COMMON_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf \
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(COMMON_PATH)/configs/asound.conf:system/etc/asound.conf
+    $(COMMON_PATH)/configs/asound.conf:system/etc/asound.conf \
+    $(COMMON_PATH)/audio/silence.wav:system/etc/sound/silence.wav
+
+#    audio.primary.montblanc \
 
 PRODUCT_PACKAGES += \
     audio.usb.default \
