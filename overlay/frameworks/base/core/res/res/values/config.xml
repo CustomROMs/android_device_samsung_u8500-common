@@ -146,7 +146,7 @@
     <string name="config_legacyUmsLunFile">/sys/devices/virtual/android_usb/android0/f_mass_storage/lun0/file</string>
 
     <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
+<!--    <bool name="config_enableTorch">true</bool> -->
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
     <bool name="config_samsung_stk">true</bool>
@@ -161,7 +161,7 @@
          This needs to match the constants in
          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
     -->
-    <integer name="config_doubleTapOnHomeBehavior">3</integer>
+<!--    <integer name="config_doubleTapOnHomeBehavior">3</integer> -->
 
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -177,8 +177,8 @@
     <integer name="config_deviceHardwareKeys">7</integer>
 
     <!-- Performance profiles -->
-    <string name="config_perf_profile_prop">sys.perf.profile</string>
-    <string name="config_perf_profile_default_entry">1</string>
+ <!--   <string name="config_perf_profile_prop">sys.perf.profile</string>
+    <string name="config_perf_profile_default_entry">1</string>-->
 
     <!-- Package name(s) containing location provider support.
          These packages can contain services implementing location providers,
@@ -193,10 +193,11 @@
          have to be explicitly listed here, however it must have a signature
          that matches the signature of at least one package on this list.
          -->
+<!--
     <string-array name="config_locationProviderPackageNames" translatable="false">
         <item>com.android.location.fused</item>
         <item>com.google.android.location</item>
         <item>com.google.android.gms</item>
     </string-array>
-
+-->
 </resources>
