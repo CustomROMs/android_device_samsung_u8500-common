@@ -36,10 +36,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/vold.fstab:system/etc/vold.fstab
 
-# Bluetooth configuration files
-PRODUCT_COPY_FILES += \
-    system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf
-
 # Wifi
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
@@ -66,8 +62,13 @@ PRODUCT_PACKAGES += \
     libaudioutils \
     libtinyalsa \
     SamsungServiceMode \
-    Torch
-    
+    Torch \
+    gralloc.montblanc \
+    copybit.montblanc \
+    hwcomposer.montblanc \
+    libstlport \
+    libstagefrighthw \
+
 # HAL
 PRODUCT_PACKAGES += \
     libnetcmdiface
@@ -133,8 +134,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
