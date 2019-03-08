@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+-include vendor/st-ericsson/u8500/BoardConfig.mk
+
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/u8500-common/include
 
 # Board
