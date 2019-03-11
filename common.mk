@@ -59,8 +59,11 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     com.android.future.usb.accessory \
     power.montblanc \
+    camera.montblanc \
+    libasound \
     libaudioutils \
     libtinyalsa \
+    libomxil-bellagio \
     SamsungServiceMode \
     Torch \
     gralloc.montblanc \
