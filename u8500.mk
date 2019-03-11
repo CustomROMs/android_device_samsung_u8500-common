@@ -71,6 +71,9 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     libaudioutils \
     libtinyalsa \
+    camera.montblanc \
+    libasound \
+    libomxil-bellagio \
     libstlport \
     libstagefrighthw
 
